@@ -1,0 +1,13 @@
+.qa-filtergrid, .qa-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.qa-filtergrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.qa-field label { display: block; font-weight: 600; }
+.qa-field select { width: 100%; max-width: 100%; }
+.qa-value { font-size: 1.85rem; font-weight: 700; color: #175c87; }
+.qa-question h3 { font-size: 1.25rem; }
+.qa-question { overflow-wrap: anywhere; }
+.qa-comment { white-space: normal; }
+.qa-chart { max-width: 100%; overflow-x: auto; margin: 1rem 0; }
+.qa-chart svg { display: block; width: 100%; min-width: 580px; height: auto; background: #fff; border-radius: 8px; }
+@media print { .qa-chart { overflow: visible; break-inside: avoid; } .qa-chart svg { min-width: 0; } }
+@media (max-width: 800px) { .qa-filtergrid, .qa-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .qa-filtergrid, .qa-cards { grid-template-columns: minmax(0, 1fr); } }
